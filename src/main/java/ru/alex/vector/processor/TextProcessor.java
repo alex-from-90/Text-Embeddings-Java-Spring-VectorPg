@@ -29,7 +29,7 @@ public class TextProcessor {
         );
 
         // Разбивка документов на сегменты с помощью DocumentByParagraphSplitter
-        DocumentByParagraphSplitter splitter = new DocumentByParagraphSplitter(600, 0);
+        DocumentByParagraphSplitter splitter = new DocumentByParagraphSplitter(800, 200);
         List<String> result = new ArrayList<>();
         for (Document document : documents) {
             List<TextSegment> textSegments = splitter.split(document);
